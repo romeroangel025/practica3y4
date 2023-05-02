@@ -1,3 +1,4 @@
+import datetime
 
 def reverso():
 
@@ -49,4 +50,23 @@ def sumaPares():
   for i in range(2,100,2):
       suma=i+suma
   print("La suma es:",suma)
-sumaPares()
+
+def sonIguales():
+ num1= int(input("ingrese un numero: "))
+ num2= int(input("ingrese un numero: "))
+ num3= int(input("ingrese un numero: "))
+ if (num1+num2 == num3 or num1+num3==num2 or num3+num1==num2):
+   print("son iguales")
+ else:
+  print("son distintos")  
+  
+def diferenciaHoraria():
+ hora = int(input("Ingrese la hora: "))
+ minuto = int(input("Ingrese el minuto: "))
+ segundo = int(input("Ingrese el segundo: "))
+
+ hora_actual = datetime.datetime.now().time()
+ diferencia = datetime.datetime.combine(datetime.date.today(), hora_actual) - datetime.datetime.combine(datetime.date.today(), datetime.time(hora, minuto, segundo))
+
+ print("La diferencia entre el horario ingresado y la hora actual es:", diferencia)  
+
