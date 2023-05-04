@@ -70,3 +70,17 @@ def diferenciaHoraria():
 
  print("La diferencia entre el horario ingresado y la hora actual es:", diferencia)  
 
+def entradas():
+ entrada= int(input("Ingrese los tres digitos de su entrada: "))
+ if entrada == 0:
+   print("Por favor, diríjase a la administración para obtener una nueva entrada.")
+ elif(entrada%2==0): 
+  print("sala 1")
+ else:
+  print("sala 3")
+  
+ def buzones():
+   
+   while  > 0:
+    expediente = int(input("Ingrese un numero positivo (0 para terminar): "))  
+  
